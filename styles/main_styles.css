@@ -21,9 +21,16 @@ h2 {
     margin: 20px;
 }
 
-.flex_header {
+.flex_header, .main_info {
     display: flex;
     justify-content: space-evenly;
+}
+
+.main_info {
+    flex-direction: column;
+    border : 5px solid black;
+    padding: 40px;
+    width: 400px;
 }
 
 #my_photo {
@@ -45,9 +52,13 @@ h2 {
     padding: 20px;
 }
 
-.nav_item {
+.block_content, .nav_item {
+    border: 5px solid rgb(0, 132, 219);
     padding: 10px;
-    border: 3px solid rgb(64, 163, 221);
+}
+
+.nav_item {
+    border-width: 3px;
     font-weight: 900;
 }
 
@@ -61,20 +72,6 @@ a {
     text-decoration: none;
     color: black;
     padding: 13px;
-}
-
-.block_content {
-    border: 5px solid rgb(0, 132, 219);
-    padding: 10px;
-}
-
-.main_info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border : 5px solid black;
-    padding: 40px;
-    width: 400px;
 }
 
 .cv_nav {
