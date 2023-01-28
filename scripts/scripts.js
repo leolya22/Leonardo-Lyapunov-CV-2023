@@ -21,47 +21,13 @@ const work = document.getElementById("work");
 
 let block = Array.from( document.getElementsByClassName("block") );
 
+let buttons = Array.from( document.getElementsByClassName("nav_item") );
 
 
 
-presentationButton.onclick = () => {
-    block.forEach(el => el.classList.remove('visible') );
-    presentation.classList.add('visible');
-    window.scrollTo({
-        top: 1000,
-        behavior: 'smooth'
-    });
-};
-
-idiomasButton.onclick = () => {
-    block.forEach(el => el.classList.remove('visible') );
-    idiomas.classList.add('visible');
-    
-};
-
-estudiosButton.onclick = () => {
-    block.forEach(el => el.classList.remove('visible') );
-    estudios.classList.add('visible');
-};
-
-cursosButton.onclick = () => {
-    block.forEach(el => el.classList.remove('visible') );
-    cursos.classList.add('visible');
-};
-
-habButton.onclick = () => {
-    block.forEach(el => el.classList.remove('visible') );
-    hab.classList.add('visible');
-    
-};
-
-hobbieButton.onclick = () => {
-    block.forEach(el => el.classList.remove('visible') );
-    hobbie.classList.add('visible');
-};
-
-workButton.onclick = () => {
-    block.forEach(el => el.classList.remove('visible') );
-    work.classList.add('visible');
-};
-
+buttons.forEach( (button, index) => {
+    button.onclick = () => {
+        block.forEach(el => el.classList.remove('visible') );
+        block[index].classList.add('visible');
+    };
+});
