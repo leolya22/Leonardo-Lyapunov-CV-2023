@@ -13,16 +13,11 @@ li {
     list-style-type: none;
 }
 
-ul, p {
-    text-align: center;
-}
-
-h1 {
+ul, p, h1, h2 {
     text-align: center;
 }
 
 h2 {
-    text-align: center;
     margin: 20px;
 }
 
